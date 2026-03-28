@@ -1,0 +1,23 @@
+<h1>RIWAYAT TRANSAKSI</h1>
+
+<table border="1">
+<tr>
+<th>ID</th>
+<th>Total</th>
+<th>Diskon</th>
+<th>Pajak</th>
+<th>Grand Total</th>
+</tr>
+
+{% for t in data %}
+<tr>
+<td>{{ t.id }}</td>
+<td>{{ t.total }}</td>
+<td>{{ t.diskon }}</td>
+<td>{{ t.pajak }}</td>
+<td>{{ t.grand_total }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">Kembali</a>
