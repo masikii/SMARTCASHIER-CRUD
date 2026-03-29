@@ -1,0 +1,31 @@
+<h1>DATA BARANG</h1>
+
+<a href="/tambah">Tambah Barang</a> |
+<a href="/transaksi">Transaksi</a> |
+<a href="/riwayat">Riwayat</a> |
+<a href="/logout">Logout</a>
+
+<br><br>
+
+<table border="1">
+<tr>
+<th>Kode</th>
+<th>Nama</th>
+<th>Harga</th>
+<th>Stok</th>
+<th>Aksi</th>
+</tr>
+
+{% for b in data %}
+<tr>
+<td>{{ b.kode }}</td>
+<td>{{ b.nama }}</td>
+<td>{{ b.harga }}</td>
+<td>{{ b.stok }}</td>
+<td>
+<a href="/update/{{b.kode}}">Edit</a> |
+<a href="/delete/{{b.kode}}">Hapus</a>
+</td>
+</tr>
+{% endfor %}
+</table>
