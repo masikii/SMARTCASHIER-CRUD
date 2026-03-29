@@ -1,7 +1,7 @@
 SmartCashier Web Application
 
 LIVE DEMO
-Coming soon
+https://smartcashier-crud-2.onrender.com/
 
 Project Overview
 
