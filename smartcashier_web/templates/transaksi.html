@@ -1,0 +1,14 @@
+<h1>TRANSAKSI</h1>
+
+<form method="post">
+
+{% for b in data %}
+{{ b.nama }} (stok: {{ b.stok }}) 
+<input name="{{b.kode}}" placeholder="qty"><br>
+{% endfor %}
+
+<br>
+<button type="submit">Proses Transaksi</button>
+</form>
+
+<a href="/">Kembali</a>
